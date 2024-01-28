@@ -1,16 +1,20 @@
+'use client'
 import { ThemeToggle } from "."
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {BsList, BsX} from 'react-icons/bs';
+import {BsList, BsX, BsInstagram, BsLinkedin , BsGithub} from 'react-icons/bs';
 
 
 const styles = {
     navLinks: 'cursor-pointer ml-10 hover:text-[#00c1f5] text-xs',
-    navNumb: 'text-[#00c1f5]',
+    navNumb: 'text-[#00c1f5] leading-loose',
     navMobileLinks: 'py-4 hover:text-[#00c1f5] text-[#ccd6f6] text-xs'
 }
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header>
         <nav className="w-full shadow-xl h-24 items-center justify-between">
@@ -43,33 +47,46 @@ const Header = () => {
                     </ul>
                 </div>
                 {/* mobile design */}
-                <div className="sm:hidden cursor-pointer pl-24 ease-in-out duration-200">
+                <div onClick={toggleMenu} className="sm:hidden cursor-pointer pl-24 ease-in-out duration-500">
                     <BsList className="h-8 w-8 text-[#00c1f5]"/>
                 </div>
             </div>
 
-            <div className="fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#021a33] shadow-xl p-10 ease-in-out duration-500">
-                    <div className="flex w-full items-center justify-end">
-                        <div className="cursor-pointer">
+            <div className={menuOpen? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#021a33] shadow-xl p-10 ease-in-out duration-500": "fixed left-[100%] top-0 p-10 ease-in-out duration-500"}>
+                    <div className="flex w-full items-center justify-end mb-20">
+                        <div onClick={toggleMenu} className="cursor-pointer">
                             <BsX className="h-8 w-8 text-[#00c1f5]"/>
                         </div>
                     </div>
                         {/* mobile menu links */}
-                    <div className="flex-col text-center py-4">
+                    <div className="flex-col text-center py-4 mb-10">
                             <ul>
-                                <li className={styles.navMobileLinks}>
+                                <li className={styles.navMobileLinks} onClick={()=> setMenuOpen(false)}>
                                 <span className={styles.navNumb}>01.</span> <br/><Link href='/about'>About</Link>
                                 </li>
-                                <li className={styles.navMobileLinks}>
+                                <li className={styles.navMobileLinks} onClick={()=> setMenuOpen(false)}>
                                 <span className={styles.navNumb}>02.</span> <br/><Link href='/experience'>Experience </Link>
                                 </li>
-                                <li className={styles.navMobileLinks}>
+                                <li className={styles.navMobileLinks} onClick={()=> setMenuOpen(false)}>
                                 <span className={styles.navNumb}>03.</span> <br/><Link href='/projects'>Projects</Link>
                                 </li>
-                                <li className={styles.navMobileLinks}>
+                                <li className={styles.navMobileLinks} onClick={()=> setMenuOpen(false)}>
                                 <span className={styles.navNumb}>04.</span> <br/><Link href='/contact'>Contact</Link>
                                 </li>
                             </ul>
+                     </div>
+
+                     {/* social links */}
+                     <div className="flex flex-row justify-around">
+                        <Link href='github.com'>
+                            <BsGithub size={30} className="cursor-pointer hover:text-[#00c1f5] ease-in-out duration-300"/>
+                        </Link>
+                        <Link href='linkedin.com'>
+                            <BsLinkedin size={30} className="cursor-pointer hover:text-[#00c1f5] ease-in-out duration-300"/>
+                        </Link>
+                        <Link href='instagram.com'>
+                            <BsInstagram size={30} className="cursor-pointer hover:text-[#00c1f5] ease-in-out duration-300"/>
+                        </Link>
                      </div>
                    
             </div>
