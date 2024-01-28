@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace
+}
+
+
+html.dark body {
+  background-color: #021a33; 
+}
+
+  
