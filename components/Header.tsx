@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import {BsList, BsX, BsInstagram, BsLinkedin , BsGithub} from 'react-icons/bs';
 
-
 const styles = {
     navLinks: 'cursor-pointer ml-10 hover:text-[#00c1f5] text-xs',
     navNumb: 'text-[#00c1f5] leading-loose',
@@ -24,10 +23,10 @@ const Header = () => {
                 <Image
                     src='/logo_name.png'
                     alt="logo with name"
-                    width={118}
-                    height={180}
-                    className="object-contain cursor-pointer shadow-lg"
-                    />
+                    width={150}
+                    height={100}
+                    className="object-contain cursor-pointer shadow-md"
+/>
                 </Link>
 
                 <div className="text-[#ccd6f6] opacity-50 hidden sm:flex">
