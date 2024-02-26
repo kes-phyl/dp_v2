@@ -9,7 +9,7 @@ const About = () => {
                 <span className='text-[#00c1f5]'>01.</span>  About Me</div>
             <div className='h-4 w-[10%] border-b border-[#610000]'></div>
         </div>
-   <div className="notification w-[70%] ml-[300px] h-[50vh] pt-10">
+   <div className="notification w-[70%] ml-[300px] h-[60vh] pt-10">
    <div className="notibody w-[50%]">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nihil, eveniet tempore voluptas atque voluptate, suscipit voluptates ab autem culpa, cumque labore tempora commodi vitae? Repellat ullam quo at perferendis!</p>
         <br />
@@ -34,9 +34,6 @@ const About = () => {
     <div className='justify-end mt-5 ml-20'>
         <Image src='/kes.jpg' alt='my image' width={200} height={200} className='rounded-full'/>
     </div>
-   {/* <div className="notiglow"></div>
-   <div className="notiborderglow"></div> */}
-   
  </div>
  </section>
   )

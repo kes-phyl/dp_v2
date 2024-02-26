@@ -19,15 +19,18 @@ const Header = () => {
         <nav className="w-full shadow-xl h-24 items-center justify-between">
             {/* desktop styles */}
             <div className="flex justify-between items-center px-4 w-full h-full">
+                <div>
                 <Link href='/'>
                 <Image
                     src='/logo_name.png'
                     alt="logo with name"
-                    width={150}
-                    height={100}
-                    className="object-contain cursor-pointer shadow-md"
+                    width={50}
+                    height={50}
+                    className="object-contain cursor-pointer shadow-lg ml-10"
 />
                 </Link>
+
+                </div>
 
                 <div className="text-[#ccd6f6] opacity-50 hidden sm:flex">
                     <ul className="hidden sm:flex">

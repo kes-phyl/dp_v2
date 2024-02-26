@@ -4,6 +4,9 @@ import Hero from "./Hero";
 import AnimatedButton from "./AnimatedButton";
 import Socials from "./Socials";
 import About from "./About";
+import Experience from "./Experience";
+import Projects from "./Projects";
+
 
 export {
     Header,
@@ -11,5 +14,7 @@ export {
     Hero,
     AnimatedButton,
     Socials,
-    About
+    About,
+    Experience,
+    Projects
 }
