@@ -19,14 +19,14 @@ const About = () => {
              <p>Here are a few Technologies I have worked with</p>
         <div className='ml-[5%] mt-[5%] technology flex py-2 list-none text-xs'>
                 <div className='first-stack mr-12'>
-                <li><LiaCaretRightSolid className='inline text-base text-[#610000]'/> JavaScript</li>
+                <li><LiaCaretRightSolid className='inline text-base text-[#610000]'/> JavaScript  (ES6+)</li>
                 <li><LiaCaretRightSolid className='inline text-base text-[#610000]'/> NodeJs</li>
                 <li><LiaCaretRightSolid className='inline text-base text-[#610000]'/> TypeScript</li>
                 </div>
 
                 <div className='second-stack'>
+                <li><LiaCaretRightSolid className='inline text-base text-[#610000]'/> React</li>
                 <li><LiaCaretRightSolid className='inline text-base text-[#610000]'/> Python</li>
-                <li><LiaCaretRightSolid className='inline text-base text-[#610000]'/> ReactNative</li>
                 </div>
          </div>
        
