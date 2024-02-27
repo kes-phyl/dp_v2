@@ -34,7 +34,7 @@ const ButtonPanel: React.FC<{ companies: Company[]; onSelectCompany: (company: C
   );
 };
 const Experience: React.FC = () => {
-  const [selectedCompany, setSelectedCompany] = useState<Company>(companiesData['Conigital']);
+  const [selectedCompany, setSelectedCompany] = useState<Company>(companiesData['Signapse']);
 
   const handleSelectCompany = (company: Company) => {
     setSelectedCompany(company);
