@@ -1,4 +1,6 @@
 import React from 'react'
+import { ProjectCard, RevProjectCard } from '.'
+
 
 const Projects = () => {
   return (
@@ -8,7 +10,9 @@ const Projects = () => {
                 <span className='text-[#00c1f5]'>04.</span> Projects</div>
         <div className='h-4 w-[10%] border-b border-[#610000]'></div>
     </div>
-   
+
+    <ProjectCard/>
+    <RevProjectCard/>
     </section>
   )
 }

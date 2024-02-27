@@ -6,7 +6,8 @@ import Socials from "./Socials";
 import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
-
+import ProjectCard from "./ProjectCard";
+import RevProjectCard from "./RevProjectCard";
 
 export {
     Header,
@@ -16,5 +17,7 @@ export {
     Socials,
     About,
     Experience,
-    Projects
+    Projects,
+    ProjectCard,
+    RevProjectCard
 }
