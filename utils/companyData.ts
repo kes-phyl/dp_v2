@@ -69,7 +69,7 @@ export type Responsibility = {
       date: 'Dec 2022 - Mar 2024',
       responsibilities: [
         { description: 'Created a web-based video translation plugin (translate from text to British/American Sign Language), using JavaScript, and AI for text-to-video translation in 21weeks.' },
-        { description: 'Developed a real time flight announcement portal, with REACT JS that uses multiple data endpoints to display flight announcements on multiple screens in an airport, showcasing flight details real time in multiple UI.' },
+        { description: 'Developed a real time flight announcement portal, with REACT JS that uses multiple data endpoints to display flight announcements on multiple screens in an airport, showcasing flight details & announcements realtime.' },
         { description: 'Applied Test Driven Development with frameworks like, JEST and Cypress, prioritizing application security, accessibility and best practice.' },
         { description: 'Collaborated in Design planning, testing, code reviews, user stories planning on JIRA while prioritizing efficiency and maintainability across codebase. ' },
       ],

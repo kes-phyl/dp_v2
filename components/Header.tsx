@@ -32,29 +32,29 @@ const Header = () => {
 
                 </div>
 
-                <div className="text-[#ccd6f6] opacity-50 hidden sm:flex">
-                    <ul className="hidden sm:flex">
+                <div className="text-[#ccd6f6] opacity-50 hidden xl:flex">
+                    <ul className="hidden xl:flex">
                         <li className={styles.navLinks}>
-                            <span className={styles.navNumb}>01.</span> <Link href='/about'>About</Link>
+                            <span className={styles.navNumb}>01.</span> <Link href='#about'>About</Link>
                         </li>
                         <li className={styles.navLinks}>
-                            <span className={styles.navNumb}>02.</span> <Link href='/experience'>Experience</Link>
+                            <span className={styles.navNumb}>02.</span> <Link href='#experience'>Experience</Link>
                         </li>
                         <li className={styles.navLinks}>
-                            <span className={styles.navNumb}>03.</span> <Link href='/work'>Work</Link>
+                            <span className={styles.navNumb}>03.</span> <Link href='#project'>Project</Link>
                         </li>
                         <li className={styles.navLinks}>
-                            <span className={styles.navNumb}>04.</span> <Link href='/contact'>Contact</Link>
+                            <span className={styles.navNumb}>04.</span> <Link href='#contact'>Contact</Link>
                         </li>
                     </ul>
                 </div>
                 {/* mobile design */}
-                <div onClick={toggleMenu} className="sm:hidden cursor-pointer pl-24 ease-in-out duration-500">
+                <div onClick={toggleMenu} className="xl:hidden cursor-pointer pl-24 ease-in-out duration-500">
                     <BsList className="h-8 w-8 text-[#00c1f5]"/>
                 </div>
             </div>
 
-            <div className={menuOpen? "fixed top-0 left-0 w-[75%] sm:hidden h-screen bg-[#021a33] shadow-xl p-10 ease-in-out duration-500": "fixed left-[100%] top-0 p-10 ease-in-out duration-500"}>
+            <div className={menuOpen? "fixed top-0 left-0 w-[75%] xl:hidden h-screen bg-[#021a33] shadow-xl p-10 ease-in-out duration-500": "fixed left-[100%] top-0 p-10 ease-in-out duration-500"}>
                     <div className="flex w-full items-center justify-end mb-20">
                         <div onClick={toggleMenu} className="cursor-pointer">
                             <BsX className="h-8 w-8 text-[#00c1f5]"/>

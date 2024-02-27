@@ -8,6 +8,9 @@ import Experience from "./Experience";
 import Projects from "./Projects";
 import ProjectCard from "./ProjectCard";
 import RevProjectCard from "./RevProjectCard";
+import Contact from "./Contact";
+import Footer from "./Footer";
+
 
 export {
     Header,
@@ -19,5 +22,7 @@ export {
     Experience,
     Projects,
     ProjectCard,
-    RevProjectCard
+    RevProjectCard,
+    Contact,
+    Footer
 }

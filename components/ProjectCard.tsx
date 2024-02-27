@@ -6,10 +6,10 @@ import { TbExternalLink } from "react-icons/tb";
 
 const ProjectCard = () => {
   return (
-    <div className='flex ml-[300px] w-[70%] text-[#708090]'>
+    <div className='flex ml-10 sm:ml-[220px] xl:ml-[300px] w-[70%] text-[#708090]'>
         <Image src='/views.jpeg' width={500} alt='Project image' className=' object-contain mr-12 rounded' height={100}/>
 
-        <div className='text-end mt-12'>
+        <div className='absolute sm:static lg:static md:static xl:static sm:text-end xl:text-end md:text-end lg:text-end mt-12'>
             <h4 className='text-[#00c1f5] text-xs mb-2'>Featured Project</h4>
             <h2 className='mb-4 text-xl text-[#A9A9A9] font-semibold'>Catalogue</h2>
             <div className='bg-[#041E42] rounded'>

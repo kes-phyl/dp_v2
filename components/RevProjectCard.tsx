@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 const RevProjectCard = () => {
   return (
-    <div className='flex mt-20 ml-[300px] w-[70%] text-[#708090]'>
-        <div className='text-start mt-12'>
+    <div className='flex mt-20 ml-10 sm:ml-[220px] xl:ml-[300px] w-[70%] text-[#708090]'>
+        <div className='text-start absolute sm:static lg:static md:static xl:static sm:text-end xl:text-end md:text-end lg:text-end mt-12'>
             <h4 className='text-[#00c1f5] text-xs mb-2'>Featured Project</h4>
             <h2 className='mb-4 text-xl text-[#A9A9A9] font-semibold'>Catalogue</h2>
             <div className='bg-[#041E42] rounded'>
