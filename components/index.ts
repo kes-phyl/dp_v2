@@ -11,7 +11,6 @@ import RevProjectCard from "./RevProjectCard";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
-
 export {
     Header,
     ThemeToggle,
@@ -24,5 +23,5 @@ export {
     ProjectCard,
     RevProjectCard,
     Contact,
-    Footer
+    Footer,
 }

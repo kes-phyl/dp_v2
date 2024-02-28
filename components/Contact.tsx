@@ -9,7 +9,7 @@ const Contact = () => {
     </div>
         <h1 className="text-3xl mb-3">Get In Touch</h1>
         <div className="lg:w-[700px] md:w-[700px] xl:w-[700px] lg:text-base md:text-base xl:text-base w-[350px] text-xs m-auto">
-        <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <p>My inbox is always open. Whether you have a question, an opportunity or just want to say hi, I’ll try my best to get back to you!</p>
         </div>
 
     <Link href='mailto:danphylbert@gmail.com'>

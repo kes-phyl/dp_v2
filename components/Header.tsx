@@ -6,7 +6,7 @@ import Image from "next/image";
 import {BsList, BsX, BsInstagram, BsLinkedin , BsGithub} from 'react-icons/bs';
 
 const styles = {
-    navLinks: 'cursor-pointer ml-10 hover:text-[#00c1f5] text-xs',
+    navLinks: 'cursor-pointer ml-10 hover:text-[#00c1f5] text-xs py-2 px-2',
     navNumb: 'text-[#00c1f5] leading-loose',
     navMobileLinks: 'py-4 hover:text-[#00c1f5] text-[#ccd6f6] text-xs'
 }
@@ -34,18 +34,18 @@ const Header = () => {
 
                 <div className="text-[#ccd6f6] opacity-50 hidden xl:flex">
                     <ul className="hidden xl:flex">
-                        <li className={styles.navLinks}>
-                            <span className={styles.navNumb}>01.</span> <Link href='#about'>About</Link>
-                        </li>
-                        <li className={styles.navLinks}>
-                            <span className={styles.navNumb}>02.</span> <Link href='#experience'>Experience</Link>
-                        </li>
-                        <li className={styles.navLinks}>
-                            <span className={styles.navNumb}>03.</span> <Link href='#project'>Project</Link>
-                        </li>
-                        <li className={styles.navLinks}>
-                            <span className={styles.navNumb}>04.</span> <Link href='#contact'>Contact</Link>
-                        </li>
+                          <Link href='#about'> <li className={styles.navLinks}>
+                            <span className={styles.navNumb}>01.</span> About
+                            </li></Link>
+                            <Link href='#experience'><li className={styles.navLinks}>
+                            <span className={styles.navNumb}>02.</span> Experience
+                        </li></Link>
+                        <Link href='#project'> <li className={styles.navLinks}>
+                            <span className={styles.navNumb}>03.</span> Project
+                        </li></Link>
+                        <Link href='#contact'><li className={styles.navLinks}>
+                            <span className={styles.navNumb}>04.</span> Contact
+                        </li></Link>
                     </ul>
                 </div>
                 {/* mobile design */}
