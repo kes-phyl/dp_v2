@@ -54,7 +54,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className={menuOpen? "fixed top-0 left-0 w-[75%] xl:hidden h-screen bg-[#021a33] shadow-xl p-10 ease-in-out duration-500": "fixed left-[100%] top-0 p-10 ease-in-out duration-500"}>
+            <div className={menuOpen? "fixed top-0 right-0 w-[75%] xl:hidden h-screen bg-[#021a33] shadow-xl p-10 ease-linear z-40 duration-500": "fixed left-[100%] top-0 p-10 ease-in-out duration-500"}>
                     <div className="flex w-full items-center justify-end mb-20">
                         <div onClick={toggleMenu} className="cursor-pointer">
                             <BsX className="h-8 w-8 text-[#00c1f5]"/>
@@ -64,16 +64,16 @@ const Header = () => {
                     <div className="flex-col text-center py-4 mb-10">
                             <ul>
                                 <li className={styles.navMobileLinks} onClick={()=> setMenuOpen(false)}>
-                                <span className={styles.navNumb}>01.</span> <br/><Link href='/about'>About</Link>
+                                <span className={styles.navNumb}>01.</span> <br/><Link href='#about'>About</Link>
                                 </li>
                                 <li className={styles.navMobileLinks} onClick={()=> setMenuOpen(false)}>
-                                <span className={styles.navNumb}>02.</span> <br/><Link href='/experience'>Experience </Link>
+                                <span className={styles.navNumb}>02.</span> <br/><Link href='#experience'>Experience </Link>
                                 </li>
                                 <li className={styles.navMobileLinks} onClick={()=> setMenuOpen(false)}>
-                                <span className={styles.navNumb}>03.</span> <br/><Link href='/projects'>Projects</Link>
+                                <span className={styles.navNumb}>03.</span> <br/><Link href='#project'>Projects</Link>
                                 </li>
                                 <li className={styles.navMobileLinks} onClick={()=> setMenuOpen(false)}>
-                                <span className={styles.navNumb}>04.</span> <br/><Link href='/contact'>Contact</Link>
+                                <span className={styles.navNumb}>04.</span> <br/><Link href='#contact'>Contact</Link>
                                 </li>
                             </ul>
                      </div>

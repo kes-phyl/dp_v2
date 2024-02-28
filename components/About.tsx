@@ -18,7 +18,7 @@ const About = () => {
                      <br />
              <p>Asides my passion for computers, I have even been more passionate about making easier the lives of persons around me. This passion led me to explore other areas like Nursing. Very quickly, I found out that I am much comfortable in the sweet spot where technology solves a user’s needs. </p>
                       <br />
-             <p>Fast-forward to today, I’ve completing a Masters in Comp Science from Coventry Uni, and I’ve had the privilege of working for <Link target='_blank' className='text-[#00c1f5]' href='https://signapse.ai'>a start-up,</Link> and <Link target='_blank' className='text-[#00c1f5]' href='https://conigital.org'>a scale up</Link> organisation.</p>
+             <p>Fast-forward to today, I’ve completed a Masters in Comp Science from Coventry Uni, and I’ve had the privilege of working for <Link target='_blank' className='text-[#00c1f5]' href='https://signapse.ai'>a start-up,</Link> and <Link target='_blank' className='text-[#00c1f5]' href='https://conigital.org'>a scale up</Link> organisation.</p>
                         <br/>
             <p>Here are a few technologies I am currently working with:</p>
 
