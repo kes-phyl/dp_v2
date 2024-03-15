@@ -21,10 +21,10 @@ const ProjectCard = () => {
                 <span>Typescript</span>  <span>Next</span>  <span>Firebase</span>
             </div>
             <div className='flex justify-end'>
-            <Link href='github.com'>
+            <Link target='_blank' href='https://github.com/kes-phyl/car_showcase'>
                  <VscGithubAlt size={30} className="cursor-pointer hover:text-[#00c1f5] ease-in-out duration-300"/>
              </Link>
-             <Link className='ml-2' href='github.com'>
+             <Link target='_blank' className='ml-2' href='https://github.com/kes-phyl/car_showcase'>
                  <TbExternalLink size={30} className="cursor-pointer hover:text-[#00c1f5] ease-in-out duration-300"/>
              </Link>
             </div>
