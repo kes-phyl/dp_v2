@@ -5,7 +5,7 @@ import { FiLinkedin } from "react-icons/fi";
 
 const Socials = () => {
   return (
-    <div className="fixed bottom-0 left-[5%] flex flex-col gap-4 text-[#00c1f5]">
+    <div className="hidden xl:flex fixed bottom-0 left-[5%] flex flex-col gap-4 text-[#00c1f5]">
     <Link target='_blank' href='https://github.com/kes-phyl'>
         <VscGithubAlt size={30} className="cursor-pointer hover:scale-125 hover:text-[#00c1f5] ease-in-out duration-300"/>
     </Link>

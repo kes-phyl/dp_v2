@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const RevProjectCard = () => {
   return (
-    <div className='flex mt-20 ml-10 sm:ml-[220px] xl:ml-[300px] w-[70%] text-[#708090]'>
+    <div className='flex mt-20 ml-10 sm:ml-[220px] md:ml-[150px] xl:ml-[400px] w-[70%] text-[#708090]'>
         <div className='text-start absolute sm:static lg:static md:static xl:static sm:text-start xl:text-start md:text-start lg:text-start mt-12'>
             <h4 className='text-[#00c1f5] text-xs mb-2'>Featured Project</h4>
             <h2 className='mb-4 text-xl text-[#A9A9A9] font-semibold'>Keeper</h2>
@@ -25,7 +25,9 @@ const RevProjectCard = () => {
             </Link>
             </div>
          </div>
-    <Image src='/keeper.jpg' width={500} alt='Project image' className=' object-contain ml-12 rounded' height={100}/>
+        <div>
+        <Image src='/keeper.jpg' width={500} alt='Project image' className='object-contain rounded' height={100}/>
+        </div>
 </div>
   )
 }

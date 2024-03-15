@@ -26,10 +26,10 @@ export type Responsibility = {
       jobTitle: 'Software Engineer',
       date: 'Jan 2023 - Present',
       responsibilities: [
-        { description: 'Implemented & maintained JWT authentication strategy, in a MAAS application using NodeJs with Nest.Js ensuring security and reducing incidents in 12weeks.' },
-        { description: 'Enhanced developers experience by 50%, using technologies like: ReactJs, Vite  to create compelling User Interfaces communicating with Backend modules.' },
-        { description: 'Created a role module necessary for role-based access control, implemented guards and assigned roles to users, using decorators in Nest Js, enhancing user experience and reducing errors in 12 weeks.' },
-        { description: 'Managed automation and monitoring processes within a microservices ecosystem, utilizing Grafana and other tools to track and display performance metrics across various modules and roles.' },
+        { description: 'Implemented password encryption with bcrypt, in a MAAS application built with NodeJs and Nest.Js ensuring application security and removing raw-text password exposure' },
+        { description: 'Enhanced developers experience by 50%, using technologies like React with Vite to create compelling User Interfaces for visual testing on our backend modules.' },
+        { description: 'Created a role module necessary for role-based access control, implemented guards, and assigned roles to users, using decorators in Nest Js, enhancing user experience and reducing errors in 12 weeks.' },
+        { description: 'Utilize proficiency in Docker containerization and MQTT server technologies to integrate messaging capabilities within our microservices architecture, ensuring seamless communication and data exchange between distributed components of the application' },
       ],
     },
     BCR: {

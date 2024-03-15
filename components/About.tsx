@@ -40,7 +40,7 @@ const About = () => {
    </div>
   
     <div className='mt-5'>
-        <Image src='/kes.jpg' alt='my image' width={200} height={200} className='ml-10 float-right rounded-full'/>
+        <Image src='/kes.jpg' alt='my image' width={200} height={200} className='ml-10 float-right rounded-full hidden xl:flex'/>
     </div>
    {/* <div className="notiglow"></div>
    <div className="notiborderglow"></div> */}

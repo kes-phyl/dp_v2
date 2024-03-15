@@ -80,13 +80,13 @@ const Header = () => {
 
                      {/* social links */}
                      <div className="flex flex-row justify-around">
-                        <Link href='github.com'>
+                        <Link href='https://github.com/kes-phyl'>
                             <BsGithub size={30} className="cursor-pointer hover:text-[#00c1f5] ease-in-out duration-300"/>
                         </Link>
-                        <Link href='linkedin.com'>
+                        <Link href='https://www.linkedin.com/in/dan-phylbert-704947183/'>
                             <BsLinkedin size={30} className="cursor-pointer hover:text-[#00c1f5] ease-in-out duration-300"/>
                         </Link>
-                        <Link href='instagram.com'>
+                        <Link href='https://www.instagram.com/phyl_dan?igsh=MXFldjBsYXJoZmNmOQ%3D%3D&utm_source=qr'>
                             <BsInstagram size={30} className="cursor-pointer hover:text-[#00c1f5] ease-in-out duration-300"/>
                         </Link>
                      </div>
