@@ -19,7 +19,8 @@ export default function RootLayout({
       <body className='relative antialiased overflow-x-hidden'>
         <Providers>
           <Header/>
-          {children}</Providers>
+          {children}
+          </Providers> 
         </body>
     </html>
   );
