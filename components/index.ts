@@ -6,10 +6,11 @@ import Socials from "./Socials";
 import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
-import ProjectCard from "./ProjectCard";
-import RevProjectCard from "./RevProjectCard";
+import FeaturedProject from "./FeaturedProject";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Section from "./Section";
+import SectionHeading from "./SectionHeading";
 
 export {
     Header,
@@ -20,8 +21,9 @@ export {
     About,
     Experience,
     Projects,
-    ProjectCard,
-    RevProjectCard,
+    FeaturedProject,
     Contact,
     Footer,
+    Section,
+    SectionHeading,
 }

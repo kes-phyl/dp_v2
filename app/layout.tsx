@@ -5,8 +5,11 @@ import { Header } from "@/components";
 
 
 export const metadata: Metadata = {
-  title: "v2_dan",
+  title: "Dan Phylbert",
   description: "A peak into a beautiful mind",
+  icons: {
+    icon: "/logo_name.png",
+  },
 };
 
 export default function RootLayout({
