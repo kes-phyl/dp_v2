@@ -3,7 +3,7 @@ import Section from './Section'
 
 const Hero = () => {
   return (
-    <Section className="flex min-h-[calc(100vh-5rem)] items-center pt-8 md:pt-12">
+    <Section className="flex min-h-[calc(100dvh-5rem)] items-center pt-4 md:pt-8">
       <div className="prose-width">
         <p className="mb-6 text-lg text-body sm:mb-8 sm:text-2xl">
           {'{Hi'} <span className="waving">🖐🏿</span>

@@ -18,7 +18,7 @@ const Header = () => {
   }, [menuOpen])
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-inherit/80 backdrop-blur-sm">
+    <header className="fixed inset-x-0 top-0 z-50 w-full border-b border-white/5 bg-[#0f0b38]/95 backdrop-blur-sm">
       <nav className="section-container flex h-20 items-center justify-between">
         <Link href="/" onClick={closeMenu}>
           <Image
