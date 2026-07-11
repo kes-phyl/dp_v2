@@ -27,7 +27,7 @@ const About = () => {
             <p>
               Hi, I&apos;m Dan. My path into web development started in 2015 with a
               &lsquo;coding-dictionary&rsquo; that turned out to be an HTML &amp; CSS textbook
-              — I&apos;ve been building ever since.
+              - I&apos;ve been building ever since.
             </p>
             <br />
             <p>

@@ -2,7 +2,7 @@ import { Hero, Socials, About, Experience, Projects, Contact, Footer } from '@/c
 
 export default function Home() {
   return (
-    <main className="page-shell lg:pl-16">
+    <main className="page-shell pt-20 lg:pl-16">
       <Hero />
       <About />
       <Experience />
