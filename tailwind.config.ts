@@ -9,6 +9,13 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        accent: "#00c1f5",
+        body: "#708090",
+        divider: "#610000",
+        nav: "#ccd6f6",
+        "card-bg": "#041E42",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

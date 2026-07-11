@@ -2,15 +2,15 @@ import Link from 'next/link'
 
 const AnimatedButton = () => {
   return (
-    <button className="button-animated mt-10" data-text="Awesome">
-  <Link target='_blank' href='/DanPhylbertCv.pdf'>
-    {/* <button className="button-animated mt-10" data-text="Awesome"> */}
-    <span className="actual-text">&nbsp;Resume?&nbsp;</span><span aria-hidden="true" className="hover-text">&nbsp;Resume?&nbsp;</span>
-    {/* <span aria-hidden="true" className="hover-text">&nbsp;Resume?&nbsp;</span> */}
-    {/* </button> */}
-   
-</Link>
-</button>
+    <Link
+      href="/DanPhylbertCv.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="button-animated mt-10 inline-block"
+    >
+      <span className="actual-text">&nbsp;Resume?&nbsp;</span>
+      <span aria-hidden="true" className="hover-text">&nbsp;Resume?&nbsp;</span>
+    </Link>
   )
 }
 

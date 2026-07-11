@@ -1,22 +1,37 @@
-import Link from "next/link"
-import {VscGithubAlt} from 'react-icons/vsc';
-import { CiInstagram } from "react-icons/ci";
-import { FiLinkedin } from "react-icons/fi";
+import Link from 'next/link'
+import { VscGithubAlt } from 'react-icons/vsc'
+import { CiInstagram } from 'react-icons/ci'
+import { FiLinkedin } from 'react-icons/fi'
+import { socialLinks } from '@/utils/navLinks'
+
+const iconMap = {
+  GitHub: VscGithubAlt,
+  LinkedIn: FiLinkedin,
+  Instagram: CiInstagram,
+} as const
 
 const Socials = () => {
   return (
-    <div className="hidden xl:flex fixed bottom-0 left-[5%] flex flex-col gap-4 text-[#00c1f5]">
-    <Link target='_blank' href='https://github.com/kes-phyl'>
-        <VscGithubAlt size={30} className="cursor-pointer hover:scale-125 hover:text-[#00c1f5] ease-in-out duration-300"/>
-    </Link>
-    <Link target='_blank' href='https://www.linkedin.com/in/dan-phylbert-704947183/'>
-        <FiLinkedin size={30} className="cursor-pointer hover:scale-125 hover:text-[#00c1f5] ease-in-out duration-300"/>
-    </Link>
-    <Link target='_blank' href='https://www.instagram.com/phyl_dan?igsh=MXFldjBsYXJoZmNmOQ%3D%3D&utm_source=qr'>
-        <CiInstagram size={30} className="cursor-pointer hover:scale-125 hover:text-[#00c1f5] ease-in-out duration-300"/>
-    </Link>
-    <div className="h-[92px] border-l-2 ml-3 mt-2 border-[#610000]"></div>
-</div>
+    <div className="fixed bottom-0 left-6 z-30 hidden flex-col gap-4 text-accent lg:flex">
+      {socialLinks.map(({ href, label }) => {
+        const Icon = iconMap[label]
+        return (
+          <Link
+            key={href}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+          >
+            <Icon
+              size={28}
+              className="cursor-pointer transition-all duration-300 hover:scale-110 hover:text-accent"
+            />
+          </Link>
+        )
+      })}
+      <div className="ml-3 mt-2 h-24 border-l-2 border-divider" />
+    </div>
   )
 }
 
