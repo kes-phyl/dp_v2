@@ -13,13 +13,13 @@ export type Company = {
 export const companiesData: Record<string, Company> = {
   FXDigital: {
     name: 'FX Digital',
-    jobTitle: 'Software Engineer (TypeScript, Lightning JS, React, Node.js)',
+    jobTitle: 'Software Engineer (TypeScript, Lightning.js, React, Node.js)',
     location: 'London, UK',
     date: 'Jan 2025 – Present',
     responsibilities: [
-      { description: 'Delivered features, integrations and production fixes across BritBox WebTV and Kepler/Vega connected-TV applications, leading multiple major releases.' },
-      { description: 'Built and improved Lightning JS and TypeScript user journeys, including authentication, subscriptions, in-app purchases and platform-specific playback controls.' },
-      { description: 'Led complex third-party integrations including ATI Piano analytics, Redfast subscription prompts, commerce services and Alexa voice controls, adapting solutions to connected-TV platform constraints.' },
+      { description: 'Delivered features, integrations, and production fixes across BritBox WebTV and Kepler/Vega connected-TV applications, leading multiple major releases.' },
+      { description: 'Built and improved Lightning.js and TypeScript user journeys, including authentication, subscriptions, in-app purchases, and platform-specific playback controls.' },
+      { description: 'Led complex third-party integrations, including ATI Piano analytics, Redfast subscription prompts, commerce services, and Alexa voice controls, adapting solutions to connected-TV platform constraints.' },
       { description: 'Integrated third-party APIs and ensured reliable frontend behaviour under real-world usage.' },
     ],
   },
