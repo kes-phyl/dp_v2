@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading'
 
 const Contact = () => {
   return (
-    <Section id="contact" className="text-center">
+    <Section id="contact" className="scroll-mt-28 pt-20 text-center md:pt-24">
       <SectionHeading number="04" title="What's Next?" centered />
       <h3 className="mb-3 text-2xl text-body sm:text-3xl">Get In Touch</h3>
       <p className="mx-auto mb-10 max-w-lg text-sm leading-relaxed text-body sm:text-base">

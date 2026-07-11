@@ -5,11 +5,15 @@ import Section from './Section'
 import SectionHeading from './SectionHeading'
 
 const technologies = [
-  'JavaScript (ES6+)',
+  'JavaScript',
+  'TypeScript',
+  'Next.js',
   'React',
   'Node.js',
-  'TypeScript',
-  'Next',
+  'NestJS',
+  'PostgreSQL',
+  'Lightning.js',
+  'Jest',
 ]
 
 const About = () => {
@@ -19,44 +23,32 @@ const About = () => {
 
       <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_12rem]">
         <div className="notification w-full max-w-none">
-          <div className="notibody w-full text-sm leading-relaxed">
+          <div className="notibody prose-width w-full text-sm leading-relaxed">
             <p>
-              Hi there, my name is Dan and I enjoy creating impactful digital experiences. I have always
-              been fascinated by gadgets, but my interest in web development started back in 2015 when I
-              got a &lsquo;coding-dictionary&rsquo; that shows you how to make websites! Which in
-              hindsight, was a textbook on HTML &amp; CSS.
+              Hi, I&apos;m Dan. My path into web development started in 2015 with a
+              &lsquo;coding-dictionary&rsquo; that turned out to be an HTML &amp; CSS textbook
+              — I&apos;ve been building ever since.
             </p>
             <br />
             <p>
-              Asides my passion for computers, I have even been more passionate about making easier the
-              lives of persons around me. This passion led me to explore other areas like Nursing. Very
-              quickly, I found out that I am much comfortable in the sweet spot where technology solves a
-              user&apos;s needs.
+              Aside from technology, I&apos;m driven by work that makes people&apos;s lives
+              easier. I explored nursing before finding where I&apos;m most at home: software
+              that solves real user needs.
             </p>
             <br />
             <p>
-              Fast-forward to today, I&apos;ve completed a Masters in Comp Science from Coventry Uni, and
-              I&apos;ve had the privilege of working for{' '}
+              I hold a Master&apos;s in Computer Science from Coventry University and have
+              worked across a{' '}
               <Link target="_blank" className="text-accent" href="https://signapse.ai">
-                a start-up,
-              </Link>{' '}
-              and{' '}
+                start-up
+              </Link>
+              , a{' '}
               <Link target="_blank" className="text-accent" href="https://conigital.org">
-                a scale up
-              </Link>{' '}
-              organisation.
+                scale-up
+              </Link>
+              , and enterprise at <span className="text-accent">Oasis Group</span> — from video
+              platforms and microservices to secure, public-facing web products.
             </p>
-            <br />
-            <p>Here are a few technologies I am currently working with:</p>
-
-            <ul className="mt-6 grid list-none gap-2 text-xs sm:grid-cols-2">
-              {technologies.map((tech) => (
-                <li key={tech} className="flex items-center gap-2">
-                  <LiaCaretRightSolid className="shrink-0 text-base text-divider" />
-                  {tech}
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
 
@@ -69,6 +61,18 @@ const About = () => {
             className="rounded-full object-cover"
           />
         </div>
+      </div>
+
+      <div id="stack" className="prose-width mt-8 w-full scroll-mt-28">
+        <p className="mb-3 text-xs text-[#99999d]">I work primarily with:</p>
+        <ul className="grid list-none grid-cols-3 gap-x-3 gap-y-3 text-xs text-[#99999d] sm:flex sm:flex-wrap sm:gap-x-6 sm:gap-y-2">
+          {technologies.map((tech) => (
+            <li key={tech} className="flex min-w-0 items-start gap-1 sm:items-center sm:gap-1.5">
+              <LiaCaretRightSolid className="mt-0.5 shrink-0 text-sm text-divider/70 sm:mt-0" />
+              <span className="leading-snug">{tech}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </Section>
   )

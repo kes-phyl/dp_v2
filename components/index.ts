@@ -11,6 +11,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Section from "./Section";
 import SectionHeading from "./SectionHeading";
+import TechTag from "./TechTag";
 
 export {
     Header,
@@ -26,4 +27,5 @@ export {
     Footer,
     Section,
     SectionHeading,
+    TechTag,
 }
