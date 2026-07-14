@@ -210,16 +210,4 @@ html.dark body {
   .prose-width {
     @apply max-w-2xl;
   }
-
-  .tech-tag {
-    @apply inline-block rounded px-3 py-1 text-xs transition-colors;
-  }
-
-  .tech-tag--accent {
-    @apply border border-accent/30 bg-accent/5 text-accent hover:border-accent/60;
-  }
-
-  .tech-tag--maroon {
-    @apply border border-divider/40 bg-divider/10 text-body hover:border-divider;
-  }
 }
