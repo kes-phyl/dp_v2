@@ -7,6 +7,7 @@ import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import FeaturedProject from "./FeaturedProject";
+import FlagshipProject from "./FlagshipProject";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Section from "./Section";
@@ -23,6 +24,7 @@ export {
     Experience,
     Projects,
     FeaturedProject,
+    FlagshipProject,
     Contact,
     Footer,
     Section,
