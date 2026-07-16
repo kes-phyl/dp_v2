@@ -19,16 +19,16 @@ export const projectsData: Project[] = [
   {
     title: 'Nexum',
     description:
-      'A commercial site for software architecture and intelligent systems consulting. Designed and built end to end — brand positioning, messaging, and a conversion-led experience that reads senior without looking agency-generic.',
+      'Commercial website for Nexum, a software consulting practice. Designed in collaboration with a design partner; I led the engineering and production delivery.',
     imageSrc: '/nexum1.jpeg',
-    imageAlt: 'Nexum hero — software architecture landing page',
+    imageAlt: 'Nexum hero, software that grows with your business',
     secondaryImageSrc: '/nexum2.jpeg',
-    secondaryImageAlt: 'Nexum services grid — eight engagement entry points',
+    secondaryImageAlt: 'Nexum contact, speak with an architect',
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Framer Motion', 'Resend'],
     liveUrl: 'https://nexum-sepia.vercel.app/',
     featured: true,
     flagship: true,
-    role: 'Commercial brand site',
+    role: 'Brand site',
     year: '2026',
   },
   {

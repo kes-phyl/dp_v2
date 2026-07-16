@@ -25,20 +25,18 @@ const About = () => {
         <div className="notification w-full max-w-none">
           <div className="notibody prose-width w-full text-sm leading-relaxed">
             <p>
-              Hi, I&apos;m Dan. My path into web development started in 2015 with a
-              &lsquo;coding-dictionary&rsquo; that turned out to be an HTML &amp; CSS textbook
-              - I&apos;ve been building ever since.
+              Hi, I&apos;m Dan. I started building for the web in 2015 with a
+              &lsquo;coding-dictionary&rsquo; that was really an HTML &amp; CSS textbook
+              - I&apos;ve been at it since.
             </p>
             <br />
             <p>
-              Aside from technology, I&apos;m driven by work that makes people&apos;s lives
-              easier. I explored nursing before finding where I&apos;m most at home: software
-              that solves real user needs.
+              I care about work that makes people&apos;s lives easier. Nursing came first;
+              software stuck, where technology meets real user needs.
             </p>
             <br />
             <p>
-              I hold a Master&apos;s in Computer Science from Coventry University and have
-              worked across a{' '}
+              Master&apos;s in Computer Science (Coventry). I&apos;ve worked across a{' '}
               <Link target="_blank" className="text-accent" href="https://signapse.ai">
                 start-up
               </Link>
@@ -46,8 +44,8 @@ const About = () => {
               <Link target="_blank" className="text-accent" href="https://conigital.org">
                 scale-up
               </Link>
-              , and enterprise at <span className="text-accent">Oasis Group</span> — from video
-              platforms and microservices to secure, public-facing web products.
+              , and enterprise at <span className="text-accent">Oasis Group</span>: video
+              platforms, microservices, and public-facing products.
             </p>
           </div>
         </div>
