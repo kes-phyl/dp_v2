@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { TbExternalLink } from 'react-icons/tb'
-import TechTag from './TechTag'
 import type { Project } from '@/utils/projectsData'
 
 type FlagshipProjectProps = {
@@ -18,47 +16,48 @@ const FlagshipProject = ({ project }: FlagshipProjectProps) => {
     secondaryImageAlt,
     tags,
     liveUrl,
-    role = 'Commercial product',
+    role = 'Brand site',
     year,
   } = project
 
   return (
     <article className="w-full">
-      <div className="mb-8 max-w-2xl md:mb-10">
-        <p className="mb-3 text-xs tracking-wide text-accent">
+      <div className="mb-10 max-w-2xl md:mb-14">
+        <p className="mb-4 text-[0.65rem] uppercase tracking-[0.18em] text-body/70">
+          <span className="mr-1.5 text-accent" aria-hidden>
+            •
+          </span>
           {role}
-          {year ? <span className="text-body/60"> · {year} · Solo</span> : null}
+          {year ? ` · ${year}` : null}
         </p>
-        <h3 className="mb-4 font-mono text-3xl text-[#A9A9A9] sm:text-4xl">{title}</h3>
-        <p className="text-sm leading-relaxed text-body sm:text-base">{description}</p>
 
-        <div className="mt-6 flex flex-wrap items-center gap-4">
+        <h3 className="mb-3 font-mono text-3xl text-[#c8cdd3] sm:text-4xl">{title}</h3>
+        <p className="max-w-xl text-sm leading-relaxed text-body sm:text-base">{description}</p>
+
+        <div className="mt-6 flex flex-wrap items-baseline gap-x-6 gap-y-3">
           {liveUrl ? (
             <Link
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-accent/40 bg-accent/10 px-4 py-2 text-xs text-accent transition-colors hover:border-accent hover:bg-accent/20"
+              className="text-sm text-accent transition-colors hover:underline"
             >
-              View live site
-              <TbExternalLink size={16} aria-hidden />
+              View live
+              <span aria-hidden className="ml-1.5 text-accent/70">
+                →
+              </span>
             </Link>
           ) : null}
-        </div>
-
-        <div className="mt-5 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <TechTag key={tag} label={tag} variant="maroon" />
-          ))}
+          <p className="text-xs leading-relaxed text-body/80">{tags.join(' · ')}</p>
         </div>
       </div>
 
-      <div className="relative">
+      <div className="flex flex-col gap-6 md:gap-8">
         <Link
           href={liveUrl ?? '#'}
           target="_blank"
           rel="noopener noreferrer"
-          className="group block overflow-hidden rounded-xl border border-white/10 shadow-lg shadow-black/30"
+          className="group block overflow-hidden rounded-2xl border border-white/[0.08]"
           aria-label={`Open ${title} live site`}
         >
           <Image
@@ -66,22 +65,20 @@ const FlagshipProject = ({ project }: FlagshipProjectProps) => {
             alt={imageAlt}
             width={1920}
             height={995}
-            className="h-auto w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.015]"
+            className="h-auto w-full object-cover transition-opacity duration-500 ease-out group-hover:opacity-95"
             priority
           />
         </Link>
 
         {secondaryImageSrc ? (
-          <div className="mt-4 md:-mt-16 md:ml-auto md:w-[72%] md:pr-0">
-            <div className="overflow-hidden rounded-xl border border-white/10 shadow-xl shadow-black/40 md:ring-1 md:ring-white/5">
-              <Image
-                src={secondaryImageSrc}
-                alt={secondaryImageAlt ?? `${title} detail`}
-                width={1920}
-                height={995}
-                className="h-auto w-full object-cover"
-              />
-            </div>
+          <div className="overflow-hidden rounded-2xl border border-white/[0.08]">
+            <Image
+              src={secondaryImageSrc}
+              alt={secondaryImageAlt ?? `${title} detail`}
+              width={1920}
+              height={995}
+              className="h-auto w-full object-cover"
+            />
           </div>
         ) : null}
       </div>

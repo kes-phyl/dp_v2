@@ -8,8 +8,7 @@ const Contact = () => {
       <SectionHeading number="04" title="Contact" />
       <div className="prose-width">
         <p className="mb-6 text-sm leading-relaxed text-body sm:text-base">
-          Currently open to roles and collaborations where product craft and delivery matter. Prefer
-          email.
+          Open to roles and collaborations. Prefer email.
         </p>
         <Link
           href="mailto:danphylbert@gmail.com"
