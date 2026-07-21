@@ -15,7 +15,7 @@ export const companiesData: Record<string, Company> = {
     name: 'FX Digital',
     jobTitle: 'Software Engineer (TypeScript, Lightning.js, React, Node.js)',
     location: 'London, UK',
-    date: 'Jan 2025 – Present',
+    date: 'Nov 2025 – Present',
     responsibilities: [
       { description: 'Delivered features, integrations, and production fixes across BritBox WebTV and Kepler/Vega connected-TV applications, leading multiple major releases.' },
       { description: 'Built and improved Lightning.js and TypeScript user journeys, including authentication, subscriptions, in-app purchases, and platform-specific playback controls.' },
@@ -27,7 +27,7 @@ export const companiesData: Record<string, Company> = {
     name: 'Oasis Group',
     jobTitle: 'Software Engineer (TypeScript, React, Node.js)',
     location: 'London, UK',
-    date: 'Mar 2024 – Jan 2025',
+    date: 'Mar 2024 – Oct 2025',
     responsibilities: [
       { description: 'Led development of a public-facing web platform using Next.js, focusing on performance, accessibility, and security.' },
       { description: 'Built reusable UI components and patterns with React to support a growing, content-driven product.' },
