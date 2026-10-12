@@ -40,11 +40,8 @@ const About = () => {
               <Link target="_blank" className="text-accent" href="https://signapse.ai">
                 start-up
               </Link>
-              , a{' '}
-              <Link target="_blank" className="text-accent" href="https://conigital.org">
-                scale-up
-              </Link>
-              , and enterprise at <span className="text-accent">Oasis Group</span>: video
+              , connected-TV products at <span className="text-accent">FX Digital</span>,
+              and enterprise at <span className="text-accent">Oasis Group</span>: video
               platforms, microservices, and public-facing products.
             </p>
           </div>

@@ -65,7 +65,9 @@ const ButtonPanel = ({ companies, selectedName, onSelectCompany }: ButtonPanelPr
 
 const Experience = () => {
   const [selectedCompany, setSelectedCompany] = useState<Company>(companiesData['FXDigital'])
-  const companies: Company[] = Object.values(companiesData)
+  const companies: Company[] = Object.values(companiesData).filter(
+    (company) => company.name !== 'Conigital Group',
+  )
 
   return (
     <Section id="experience">
